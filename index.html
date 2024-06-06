@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message Generator</title>
+        <link rel="stylesheet" type="text/css" href="MixedMessages.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <h1>Message Generator</h1>
+        <p id="message"></p>
+        <button id="generate-btn">Generate Message</button>
+            </div>
+            <h2>This is a work in progress.</h2>
+            <script src="script.js"></script>
+            <script>
+                // Define arrays for different message components
+                const beginnings = ['Believe in yourself', 'Dream big', 'Stay positive',];
+                const middles = ['and you will', 'because you have the power to', 'and amazing things will'];
+                const endings = ['achieve greatness', 'make a difference', 'happen for you'];
+
+                // Function to generate a random message
+                function generateMessage() {
+                const randomBeginning = beginnings[Math.floor(Math.random() * beginnings.length)];
+                const randomMiddle = middles[Math.floor(Math.random() * middles.length)];
+                const randomEnding = endings[Math.floor(Math.random() * endings.length)];
+
+                return `${randomBeginning}, ${randomMiddle} ${randomEnding}.`;
+                }
+
+                // Generate and display a random message
+                document.getElementById('generate-btn').addEventListener('click', function() {
+                document.getElementById('message').textContent = generateMessage();
+            });
+            </script>
+    </body>
+    <main>
+
+        About Me:<br><br>
+
+
+        I am a Computer Science graduate in 2023 from Falmouth University, specializing in Full-Stack Engineering.<br>
+        During my time at Falmouth University, I gained valuable knowledge and skills in various programming languages and web development technologies.<br>
+        I have also pursued additional courses to expand my expertise. <br>
+        I completed the SwitchIT courses, including "Introduction to Python," "JavaScript Essentials," and "HTML & CSS3 Web Design Fundamentals with JavaScript" in 2024. <br>
+        These courses have further enhanced my understanding of these programming languages and web development concepts.<br>
+        
+        Currently, I am actively pursuing various Codecademy courses to stay up-to-date with the latest technologies. I am completing courses in:<br><br>
+        
+            Full-Stack Engineer<br>
+            jQuery<br>
+            Python - Learn Python 3<br>
+            PHP<br>
+            Bootstrap<br>
+            Java<br>
+            C#<br><br>
+
+        
+        By continuously learning and improving my skills, I strive to become a well-rounded and versatile developer capable of tackling a wide range of projects.</5>
+
+    </main>
+    <footer>
+    <div class="footer-contact">
+        <p>Contact Us: Alexander King</p>
+        <p>Phone: <a href="tel: +40769037642"> Romania: 00-40-(769)-037-642</a></p>
+        <p>Phone: <a href="tel: +447552873377"> United Kingdom: 00-44-7552-873377</a></p>
+        <p>Email: <a href="mailto:ak.alexander.king@gmail.com">ak.alexander.king@gmail.com</a></p>
+    </div>
+    <p>&copy; 2024 Alexander King. All rights reserved.</p>
+    </footer>
+</html>
